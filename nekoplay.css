@@ -1,0 +1,272 @@
+.bg-orange {
+  background-color: #000; 
+}
+
+.site-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.categories-dropdown {
+  background-color: #2a2a40; 
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  border: none;
+  min-width: 180px;
+}
+
+.categories-dropdown .dropdown-item {
+  color: #f0f0f0;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.categories-dropdown .dropdown-item:hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: translateX(5px);
+  border-radius: 5px;
+}
+.navbar{
+	position:sticky;
+	top:0;
+	z-index:999;
+	
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ec7063 !important; 
+}
+
+.btn-light {
+  background-color: white;
+  color: #333;
+}
+
+.btn-light:hover {
+  background-color:#ec7063;
+}
+body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+	h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin: 50px 0 30px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #ff4d6d;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.anime-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.anime-card {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.anime-card:hover {
+  width: 240px;  
+  height: 400px;
+  z-index: 10;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.anime-card:hover img {
+  filter: brightness(0.6) blur(2px);
+  transform: scale(1.05);
+}
+
+.anime-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 12, 12, 0.3);
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s ease;
+  padding: 15px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.anime-card:hover .anime-info {
+  opacity: 1;
+}
+
+.anime-info h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.anime-info p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.anime-info iframe {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.anime-info button {
+  background: #fff;
+  color: #000;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.anime-info button:hover {
+  background: #ccc;
+}
+
+.anime-list {
+  overflow: visible;
+}
+.top{
+	margin-left:50px;
+}
+.footer {
+  background-color: #000; 
+  color: #ccc; 
+  padding: 25px 0;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.05);
+  margin-top:20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  letter-spacing: 0.5px;
+}
+
+.footer span {
+  transition: color 0.3s ease;
+}
+
+.footer span:hover {
+  color: #ffffff;
+}
+
+.footer select {
+  background-color: #222;
+  color: #ccc;
+  border: 1px solid #444;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.footer select:hover {
+  border-color: #888;
+  color: white;
+  background-color: #333;
+}
+
+.footer select:focus {
+  outline: none;
+  border-color: #aaa;
+  background-color: #222;
+}
+@media (max-width:450px){
+	.anime-card {
+  width: 100px;
+  height: 200px;
+    }
+	.top{
+		justify-content:center;
+	}
+	h2{
+		font-size:1.2rem;
+	}
+}
+
